@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación - Mis 15 Años</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        body {
+            background: linear-gradient(to right, #1a1a1a, #333333);
+            color: #ffd700;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        .header-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+        .header-section img {
+            width: 250px;
+            height: 400px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 5px solid #ffd700;
+        }
+        .header-details {
+            text-align: left;
+        }
+        .invitation-header {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #ffd700;
+        }
+        .invitation-description, .invitation-details {
+            font-size: 1.2rem;
+            color: #fff;
+            margin-top: 20px;
+        }
+        hr {
+            border-top: 2px solid #ffd700;
+            width: 80%;
+            margin: 40px auto;
+        }
+        .image-section {
+            display: flex;
+            overflow-x: auto;
+            gap: 10px;
+            padding: 20px 0;
+        }
+        .image-section img {
+            width: 300px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 3px solid #ffd700;
+        }
+        .music-selection {
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 1.5rem;
+            background-color: #222;
+            border-radius: 10px;
+            position: relative;
+        }
+        .music-selection a {
+            color: #ffd700;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        .music-decor {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 80px;
+            height: 80px;
+        }
+        .map-section {
+            padding-top: 40px;
+        }
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+        .footer {
+            margin: 20px 0;
+            font-size: 1rem;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sección de encabezado con foto y detalles -->
+    <div class="container header-section" data-aos="fade-down">
+        <img src="https://via.placeholder.com/250x400/333333/FFD700?text=Julieta" alt="Foto de Julieta">
+        <div class="header-details">
+            <div class="invitation-header">09.04.2024<br>Julieta<br>Mis 15 Años</div>
+            <div class="invitation-description">Quiero festejar mis 15 bailando hasta el amanecer y vos vas a ser parte.</div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Sección de fotos con scroll horizontal -->
+    <div class="container image-section" data-aos="fade-up" data-aos-delay="400">
+        <img src="https://via.placeholder.com/300x400/333333/FFD700?text=Foto+1" alt="Foto 1">
+        <img src="https://via.placeholder.com/300x400/444444/FFD700?text=Foto+2" alt="Foto 2">
+        <img src="https://via.placeholder.com/300x400/555555/FFD700?text=Foto+3" alt="Foto 3">
+        <img src="https://via.placeholder.com/300x400/666666/FFD700?text=Foto+4" alt="Foto 4">
+    </div>
+
+    <hr>
+
+    <!-- Sección de selección de canciones -->
+    <div class="music-selection" data-aos="fade-up" data-aos-delay="600">
+        🎵 <a href="https://example.com/seleccion-musica" target="_blank">Selecciona canciones para la fiesta</a>
+        <img src="https://via.placeholder.com/80x80/555555/FFD700?text=🎶" class="music-decor" alt="Music Decor">
+    </div>
+
+    <hr>
+
+    <!-- Mapa del evento -->
+    <div class="map-section" data-aos="fade-up" data-aos-delay="800">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.637715426933!2d-58.259532525318075!3d-34.72230826850596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32d26e86b7fb1%3A0x7b79a8ec681f70c7!2sUnder%20Multiespacio!5e0!3m2!1ses!2sar!4v1695672819157!5m2!1ses!2sar"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="footer">
+        ¡Esperamos verte allí para compartir este momento tan especial!
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Inicialización de animaciones AOS
+        AOS.init();
+    </script>
+</body>
+</html>
